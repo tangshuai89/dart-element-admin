@@ -1,4 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  > div {
+    width: 100%;
+    display: flex;
+  }
+}
 .common-app-wrapper {
   height: 100%;
   width: 100%;
+
+  .header-container {
+    width: 100%;
+    display: flex;
+    background: #f3f3f3;
+
+    .logo {
+      width: 200px;
+      height: 60px;
+      background: url("../src/assets/logo.jpg") no-repeat left top;
+      background-size: 60px;
+      margin-right: 200px;
+      display: flex;
+      align-items: center;
+
+      h1 {
+        padding-left: 80px;
+      }
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+      li {
+        font-size: 16px;
+        padding: 0 20px;
+      }
+    }
+  }
 }
